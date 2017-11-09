@@ -1,0 +1,8 @@
+*.css
+*.html
+*.map
+*.js
+node_modules
+!src/systemjs.config.js
+!src/systemjs-angular-loader.js
+!src/index.html
