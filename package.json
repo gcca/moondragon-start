@@ -8,8 +8,17 @@
   "license": "GPL-2.0",
   "private": false,
   "devDependencies": {
+    "@types/jasmine": "^2.6.3",
+    "@types/node": "^8.0.50",
     "concurrently": "^3.5.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-es6-shim": "^1.0.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-phantomjs-launcher": "^1.0.4",
     "lite-server": "^2.3.0",
+    "phantomjs-prebuilt": "^2.1.16",
     "systemjs": "^0.20.19",
     "typescript": "^2.6.1"
   },
@@ -27,6 +36,7 @@
     "compile": "tsc -p src/",
     "serve": "lite-server -c=bs-config.json",
     "start": "concurrently \"npm run watch\" \"npm run serve\"",
+    "test": "concurrently \"npm run watch\" \"karma start\"",
     "watch": "tsc -p src/ -w"
   }
 }
